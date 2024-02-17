@@ -32,6 +32,26 @@ bool result = condition1 || condition2;  // Result: true
 
 In summary, ```|``` is a bitwise OR operator that operates on individual bits, while ```||``` is a logical OR operator that works on boolean values.
 
+## Conditional Operator (? :)
+
+In C#, the question mark (```?```) is used as a conditional operator, also known as the ternary operator. It is a shorthand way of expressing an if-else statement in a single line. The general syntax is:
+
+```csharp
+condition ? true_expression : false_expression;
+```
+
+Here, if the ```condition``` is true, the ```true_expression``` is evaluated and returned; otherwise, the ```false_expression``` is evaluated and returned.
+
+Example:
+
+```csharp
+int number = 10;
+string result = (number > 5) ? "Greater than 5" : "Less than or equal to 5";
+Console.WriteLine(result);
+```
+
+In this example, if ```number``` is greater than 5, the result will be "Greater than 5"; otherwise, it will be "Less than or equal to 5".
+
 ## Null-coalescing Operator (??)
 
 In C#, the ```"??"```, known as the null-coalescing operator, is used to provide a default value for a nullable type or expression. It is a shorthand way to check if a value is null and, if so, provide an alternative default value.
